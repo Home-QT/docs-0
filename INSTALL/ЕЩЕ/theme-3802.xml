@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<colorTheme id="3802" name="Cobalt2 (Textmate)" modified="2011-10-05 17:26:52" author="odahcorb" website="Cobalt2">
+    <searchResultIndication color="#D8D8D8" />
+    <filteredSearchResultIndication color="#000000" />
+    <occurrenceIndication color="#000000" />
+    <writeOccurrenceIndication color="#000000" />
+    <findScope color="#111111" />
+    <deletionIndication color="#D25252" />
+    <sourceHoverBackground color="#000000" />
+    <singleLineComment color="#0088FF" />
+    <multiLineComment color="#0088FF" />
+    <commentTaskTag color="#0088FF" />
+    <javadoc color="#0088FF" italic="true" />
+    <javadocLink color="#0088FF" italic="true" />
+    <javadocTag color="#FFEE80" />
+    <javadocKeyword color="#FFEE80" />
+    <class color="#FFDD00" />
+    <interface color="#D197D9" />
+    <method color="#9EFF80" />
+    <methodDeclaration color="#BED6FF" />
+    <bracket color="#E1EFFF" />
+    <number color="#FF628C" />
+    <string color="#3AD900" />
+    <operator color="#D8D8D8" />
+    <keyword color="#FF9D00" />
+    <annotation color="#FF9D00" />
+    <staticMethod color="#9EFFFF" />
+    <localVariable color="#CCCCCC" />
+    <localVariableDeclaration color="#9EFFFF" />
+    <field color="#CCCCCC" />
+    <staticField color="#EFC090" />
+    <staticFinalField color="#FF628C" />
+    <deprecatedMember color="#D25252" underline="false" strikethrough="true" />
+    <enum color="#7FB347" />
+    <inheritedMethod color="#BED6FF" />
+    <abstractMethod color="#BED6FF" />
+    <parameterVariable color="#CCCCCC" />
+    <typeArgument color="#BFA4A4" />
+    <typeParameter color="#BFA4A4" />
+    <constant color="#EFC090" />
+    <background color="#002240" />
+    <currentLine color="#2A2A2A" />
+    <foreground color="#FFFFFF" />
+    <lineNumber color="#D0D0D0" />
+    <selectionBackground color="#000000" />
+    <selectionForeground color="#B36539" />
+</colorTheme>

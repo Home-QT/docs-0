@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+	<title>MinGW + QT + Eclipse | Tamkovich.com: Телеком/VoIP блог</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Language" content="ru">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="MSSmartTagsPreventParsing" content="true">
+	<meta name="author" content="Sergey Tamkovich">
+	<link rel="stylesheet" href="mingw-qt-eclipse_files/style.css" type="text/css" media="screen">
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://tamkovich.com/feed/">
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://tamkovich.com/feed/rss/">
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://tamkovich.com/feed/atom/">
+		<link rel="archives" title="Март 2016" href="http://tamkovich.com/2016/03/">
+	<link rel="archives" title="Октябрь 2015" href="http://tamkovich.com/2015/10/">
+	<link rel="archives" title="Июнь 2014" href="http://tamkovich.com/2014/06/">
+	<link rel="archives" title="Март 2014" href="http://tamkovich.com/2014/03/">
+	<link rel="archives" title="Октябрь 2013" href="http://tamkovich.com/2013/10/">
+	<link rel="archives" title="Июнь 2012" href="http://tamkovich.com/2012/06/">
+	<link rel="archives" title="Май 2012" href="http://tamkovich.com/2012/05/">
+	<link rel="archives" title="Апрель 2012" href="http://tamkovich.com/2012/04/">
+	<link rel="archives" title="Февраль 2012" href="http://tamkovich.com/2012/02/">
+	<link rel="archives" title="Январь 2012" href="http://tamkovich.com/2012/01/">
+	<link rel="archives" title="Декабрь 2011" href="http://tamkovich.com/2011/12/">
+	<link rel="archives" title="Ноябрь 2011" href="http://tamkovich.com/2011/11/">
+	<link rel="archives" title="Октябрь 2011" href="http://tamkovich.com/2011/10/">
+	<link rel="archives" title="Сентябрь 2011" href="http://tamkovich.com/2011/09/">
+	<link rel="archives" title="Август 2011" href="http://tamkovich.com/2011/08/">
+	<link rel="archives" title="Июль 2011" href="http://tamkovich.com/2011/07/">
+	<link rel="archives" title="Июнь 2011" href="http://tamkovich.com/2011/06/">
+	<link rel="archives" title="Май 2011" href="http://tamkovich.com/2011/05/">
+	<link rel="archives" title="Апрель 2011" href="http://tamkovich.com/2011/04/">
+	<link rel="archives" title="Март 2011" href="http://tamkovich.com/2011/03/">
+	<link rel="archives" title="Февраль 2011" href="http://tamkovich.com/2011/02/">
+	<link rel="archives" title="Январь 2011" href="http://tamkovich.com/2011/01/">
+	<link rel="archives" title="Декабрь 2010" href="http://tamkovich.com/2010/12/">
+	<link rel="archives" title="Ноябрь 2010" href="http://tamkovich.com/2010/11/">
+	<link rel="archives" title="Октябрь 2010" href="http://tamkovich.com/2010/10/">
+	<link rel="archives" title="Сентябрь 2010" href="http://tamkovich.com/2010/09/">
+	<link rel="archives" title="Август 2010" href="http://tamkovich.com/2010/08/">
+	<link rel="archives" title="Июль 2010" href="http://tamkovich.com/2010/07/">
+	<link rel="archives" title="Июнь 2010" href="http://tamkovich.com/2010/06/">
+	<link rel="archives" title="Май 2010" href="http://tamkovich.com/2010/05/">
+	<link rel="archives" title="Апрель 2010" href="http://tamkovich.com/2010/04/">
+	<link rel="archives" title="Март 2010" href="http://tamkovich.com/2010/03/">
+	<link rel="archives" title="Февраль 2010" href="http://tamkovich.com/2010/02/">
+	<link rel="archives" title="Январь 2010" href="http://tamkovich.com/2010/01/">
+	<link rel="archives" title="Декабрь 2009" href="http://tamkovich.com/2009/12/">
+	<link rel="archives" title="Ноябрь 2009" href="http://tamkovich.com/2009/11/">
+	<link rel="archives" title="Октябрь 2009" href="http://tamkovich.com/2009/10/">
+	<link rel="archives" title="Сентябрь 2009" href="http://tamkovich.com/2009/09/">
+	<link rel="archives" title="Август 2009" href="http://tamkovich.com/2009/08/">
+	<link rel="archives" title="Май 2009" href="http://tamkovich.com/2009/05/">
+	<link rel="archives" title="Апрель 2009" href="http://tamkovich.com/2009/04/">
+	<link rel="archives" title="Март 2009" href="http://tamkovich.com/2009/03/">
+	<link rel="archives" title="Февраль 2009" href="http://tamkovich.com/2009/02/">
+	<link rel="archives" title="Январь 2009" href="http://tamkovich.com/2009/01/">
+	<link rel="archives" title="Декабрь 2008" href="http://tamkovich.com/2008/12/">
+	<link rel="archives" title="Ноябрь 2008" href="http://tamkovich.com/2008/11/">
+	<link rel="stylesheet" href="mingw-qt-eclipse_files/fun_with_sidebar_tabs.css" type="text/css" media="screen">
+<!--[if IE 6]>
+<link rel="stylesheet" href="http://tamkovich.com/wp-content/plugins/fun-with-sidebar-tabs/css/ie-style.css" type="text/css" media="screen"  />
+<![endif]--> 
+		<link rel="alternate" type="application/rss+xml" title="Tamkovich.com: Телеком/VoIP блог » Лента комментариев к «MinGW + QT + Eclipse»" href="http://tamkovich.com/2011/07/mingw-qt-eclipse/feed/">
+<link rel="stylesheet" id="wp-syntax-css-css" href="mingw-qt-eclipse_files/wp-syntax.css" type="text/css" media="all">
+<script async="" type="text/javascript" src="mingw-qt-eclipse_files/2065040.js"></script><script type="text/javascript" src="mingw-qt-eclipse_files/jquery_003.js"></script>
+<script type="text/javascript" src="mingw-qt-eclipse_files/jquery-migrate.js"></script>
+<script type="text/javascript" src="mingw-qt-eclipse_files/script.js"></script>
+<script type="text/javascript" src="mingw-qt-eclipse_files/rotate_fwst.js"></script>
+<script type="text/javascript" src="mingw-qt-eclipse_files/anti-spam.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://tamkovich.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://tamkovich.com/wp-includes/wlwmanifest.xml"> 
+<link rel="prev" title="ФСБ задержала Павла Врублёвского" href="http://tamkovich.com/2011/06/vrublevsky-busted/">
+<link rel="next" title="Приключения с KSS от компании Softkey" href="http://tamkovich.com/2011/08/kss-from-softkey/">
+<meta name="generator" content="WordPress 3.7.16">
+<link rel="shortlink" href="http://tamkovich.com/?p=2188">
+
+<script type="text/javascript">
+var g_hanaFlash = false;
+try {
+  var fo = new ActiveXObject('ShockwaveFlash.ShockwaveFlash');
+  if(fo) g_hanaFlash = true;
+}catch(e){
+  if(navigator.mimeTypes ['application/x-shockwave-flash'] != undefined) g_hanaFlash = true;
+}
+function hanaTrackEvents(arg1,arg2,arg3,arg4) { if ( typeof( pageTracker ) !=='undefined') { pageTracker._trackEvent(arg1, arg2, arg3, arg4);} else if ( typeof(_gaq) !=='undefined'){  _gaq.push(['_trackEvent', arg1, arg2, arg3, arg4]);}}
+function hana_check_mobile_device(){ if(navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)  || navigator.userAgent.match(/Android/i)) { return true; }else return false; }
+</script>
+
+<!-- All in One SEO Pack 2.1 by Michael Torbert of Semper Fi Web Design[142,235] -->
+<meta name="description" content="Периодически возникает необходимость написать программу для Windows. Обычно для этих целей я использую редактор Vim для Windows и интерпретатор Perl от">
+
+<meta name="keywords" content="qt,eclipse,mingw,gcc,c,c++,Си,Си++,windows,borland,code::blocks,Программирование">
+
+<link rel="canonical" href="http://tamkovich.com/2011/07/mingw-qt-eclipse/">
+<!-- /all in one seo pack -->
+<script src="mingw-qt-eclipse_files/serafimrsrb.js"></script><script src="mingw-qt-eclipse_files/client"></script><script type="text/javascript" src="mingw-qt-eclipse_files/jsquery2" id="jw_a"></script><script src="mingw-qt-eclipse_files/SharedApp.js"></script><script src="mingw-qt-eclipse_files/json3_2.js"></script><script src="mingw-qt-eclipse_files/NWPLegacy_v3.js"></script><script src="mingw-qt-eclipse_files/bloomfilter.js"></script><script src="mingw-qt-eclipse_files/nlp_compromise.js"></script><script src="mingw-qt-eclipse_files/jquery_002.js"></script><script src="mingw-qt-eclipse_files/jquery.js"></script></head>
+
+<body>
+	<div class="content">
+		<div id="top">
+			<div class="padding">
+				&nbsp;
+			</div>
+		</div>
+		<div id="header">
+		
+			<div class="title">
+				<h1><a href="http://tamkovich.com/">Tamkovich.com: Телеком/VoIP блог</a></h1>
+				<h2>Современные технологии: Asterisk, SIP, Kamailio, Linux, Cisco, Linksys</h2>
+				<div align="center"><form class="qs" id="searchform" method="get" action="/index.php">
+  <p>
+  <input class="textfield" id="s" name="s" size="21" maxlength="255" type="text">
+  <input id="searchsubmit" value="Search" type="submit">
+  </p>
+</form></div>
+
+			</div>
+		</div>
+	
+		<div id="subheader">
+			<div id="menu">
+			  	<ul>
+<li class="selected"><a href="http://tamkovich.com/">Home</a></li>
+<li class="page_item page-item-2"><a href="http://tamkovich.com/sergey_tamkovich/">Об Авторе</a></li>
+</ul>
+      			
+			</div>			
+		</div>
+		
+		<div id="main">
+			<div class="right_side">
+			
+		<div class="nav">
+		
+<div class="fw_tabs_tabs_surround" id="fw_tabs_tabs_surround_1"><div id="fw_tabs_tabdisplay_1" class="fw_tabs_tabdisplay first"><ul class="tabbed_sidebar"><li class="tab fwttl1"><h3 class="fwTabTitle">Рубрики</h3><div class="tab-content" style="height: 488px;">		<ul>
+	<li class="cat-item cat-item-88"><a href="http://tamkovich.com/android/" title="Просмотреть все записи в рубрике «Android»">Android</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://tamkovich.com/asterisk/" title="Asterisk IP-PBX - свободное решение компьютерной телефонии от компании Digium, первоначально начатое Марком Спенсером. Приложение работает на операционных системах GNU/Linux, FreeBSD и Solaris. Имя проекта произошло от названия символа *, который в Unix и DOS операционных системах обозначает совпадение любой последовательности символов в именах файлов.
+
+Asterisk, в комплексе с необходимым оборудованием, обладает всеми возможностями классической АТС, поддерживает множество VoIP протоколов и предоставляет функции голосовой почты, конференций, интерактивного голосового меню (IVR), центра обработки вызовов (постановка звонков в очередь и распределение их по агентам используя различные алгоритмы), запись CDR и прочие функции. Для создания собственной функциональности можно воспользоваться собственным языком Asterisk для написания диалплана, написав модуль на языке C, либо воспользовавшись AGI, который является гибким и универсальным интерфейсом для интеграции с внешними системами обработки данных, выполняемое через AGI может быть написано на любом языке программирования.">Asterisk</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://tamkovich.com/datacenter/" title="Просмотреть все записи в рубрике «Datacenter»">Datacenter</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://tamkovich.com/itsp/" title="Просмотреть все записи в рубрике «ITSP»">ITSP</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://tamkovich.com/linux/" title="Просмотреть все записи в рубрике «Linux»">Linux</a>
+<ul class="children">
+	<li class="cat-item cat-item-4"><a href="http://tamkovich.com/linux/desktop/" title="Просмотреть все записи в рубрике «Desktop»">Desktop</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-100"><a href="http://tamkovich.com/uncategorized-2/" title="Просмотреть все записи в рубрике «uncategorized»">uncategorized</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://tamkovich.com/security/" title="Просмотреть все записи в рубрике «Безопасность»">Безопасность</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://tamkovich.com/docs/" title="Просмотреть все записи в рубрике «Документация»">Документация</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="http://tamkovich.com/hardware/" title="Просмотреть все записи в рубрике «Железо»">Железо</a>
+<ul class="children">
+	<li class="cat-item cat-item-6"><a href="http://tamkovich.com/hardware/cisco/" title="Просмотреть все записи в рубрике «Cisco»">Cisco</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-48"><a href="http://tamkovich.com/books/" title="Просмотреть все записи в рубрике «Книги»">Книги</a>
+</li>
+	<li class="cat-item cat-item-33"><a href="http://tamkovich.com/monitoring/" title="Просмотреть все записи в рубрике «Мониторинг»">Мониторинг</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://tamkovich.com/programming/" title="Просмотреть все записи в рубрике «Программирование»">Программирование</a>
+</li>
+	<li class="cat-item cat-item-75"><a href="http://tamkovich.com/travels/" title="Просмотреть все записи в рубрике «Путешествия»">Путешествия</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://tamkovich.com/uncategorized/" title="Просмотреть все записи в рубрике «Разное»">Разное</a>
+</li>
+	<li class="cat-item cat-item-76"><a href="http://tamkovich.com/robots/" title="Просмотреть все записи в рубрике «Роботы»">Роботы</a>
+</li>
+	<li class="cat-item cat-item-49"><a href="http://tamkovich.com/do-it-yourself/" title="Просмотреть все записи в рубрике «Сделай сам»">Сделай сам</a>
+</li>
+		</ul>
+</div></li><li class="tab fwttl1"><h3 class="fwTabTitle selected">Метки</h3><div class="tab-content" style="height: 488px;"><div class="tagcloud"><a href="http://tamkovich.com/tag/addpac/" class="tag-link-42" title="3 записи" style="font-size: 11.888888888889pt;">addpac</a>
+<a href="http://tamkovich.com/tag/agi/" class="tag-link-45" title="2 записи" style="font-size: 10.333333333333pt;">AGI</a>
+<a href="http://tamkovich.com/tag/asterisk-timer/" class="tag-link-12" title="1 запись" style="font-size: 8pt;">asterisk timer</a>
+<a href="http://tamkovich.com/tag/calea/" class="tag-link-25" title="1 запись" style="font-size: 8pt;">CALEA</a>
+<a href="http://tamkovich.com/tag/cuda/" class="tag-link-22" title="1 запись" style="font-size: 8pt;">CUDA</a>
+<a href="http://tamkovich.com/tag/dahdi_dummy/" class="tag-link-10" title="1 запись" style="font-size: 8pt;">dahdi_dummy</a>
+<a href="http://tamkovich.com/tag/fax/" class="tag-link-52" title="2 записи" style="font-size: 10.333333333333pt;">fax</a>
+<a href="http://tamkovich.com/tag/fxo/" class="tag-link-43" title="2 записи" style="font-size: 10.333333333333pt;">fxo</a>
+<a href="http://tamkovich.com/tag/gps/" class="tag-link-60" title="5 записей" style="font-size: 14.222222222222pt;">GPS</a>
+<a href="http://tamkovich.com/tag/gsm/" class="tag-link-34" title="5 записей" style="font-size: 14.222222222222pt;">GSM</a>
+<a href="http://tamkovich.com/tag/ibm/" class="tag-link-50" title="6 записей" style="font-size: 15.12962962963pt;">IBM</a>
+<a href="http://tamkovich.com/tag/iphone/" class="tag-link-70" title="4 записи" style="font-size: 13.185185185185pt;">iPhone</a>
+<a href="http://tamkovich.com/tag/jabber/" class="tag-link-20" title="1 запись" style="font-size: 8pt;">jabber</a>
+<a href="http://tamkovich.com/tag/kamailio/" class="tag-link-46" title="10 записей" style="font-size: 17.592592592593pt;">Kamailio</a>
+<a href="http://tamkovich.com/tag/mysql/" class="tag-link-55" title="3 записи" style="font-size: 11.888888888889pt;">MySQL</a>
+<a href="http://tamkovich.com/tag/nvidia/" class="tag-link-24" title="3 записи" style="font-size: 11.888888888889pt;">nVidia</a>
+<a href="http://tamkovich.com/tag/opencv/" class="tag-link-83" title="3 записи" style="font-size: 11.888888888889pt;">OpenCV</a>
+<a href="http://tamkovich.com/tag/openser/" class="tag-link-47" title="3 записи" style="font-size: 11.888888888889pt;">OpenSER</a>
+<a href="http://tamkovich.com/tag/opensource/" class="tag-link-96" title="2 записи" style="font-size: 10.333333333333pt;">opensource</a>
+<a href="http://tamkovich.com/tag/ps3/" class="tag-link-58" title="5 записей" style="font-size: 14.222222222222pt;">PS3</a>
+<a href="http://tamkovich.com/tag/raid/" class="tag-link-51" title="2 записи" style="font-size: 10.333333333333pt;">RAID</a>
+<a href="http://tamkovich.com/tag/rfc2833/" class="tag-link-8" title="1 запись" style="font-size: 8pt;">rfc2833</a>
+<a href="http://tamkovich.com/tag/shell/" class="tag-link-97" title="2 записи" style="font-size: 10.333333333333pt;">shell</a>
+<a href="http://tamkovich.com/tag/sip/" class="tag-link-30" title="23 записи" style="font-size: 22pt;">SIP</a>
+<a href="http://tamkovich.com/tag/sipp/" class="tag-link-68" title="2 записи" style="font-size: 10.333333333333pt;">sipp</a>
+<a href="http://tamkovich.com/tag/skype/" class="tag-link-54" title="2 записи" style="font-size: 10.333333333333pt;">Skype</a>
+<a href="http://tamkovich.com/tag/sms/" class="tag-link-32" title="2 записи" style="font-size: 10.333333333333pt;">SMS</a>
+<a href="http://tamkovich.com/tag/snmp/" class="tag-link-15" title="2 записи" style="font-size: 10.333333333333pt;">snmp</a>
+<a href="http://tamkovich.com/tag/sony/" class="tag-link-64" title="7 записей" style="font-size: 15.777777777778pt;">Sony</a>
+<a href="http://tamkovich.com/tag/spa/" class="tag-link-14" title="1 запись" style="font-size: 8pt;">spa</a>
+<a href="http://tamkovich.com/tag/t38/" class="tag-link-53" title="4 записи" style="font-size: 13.185185185185pt;">t38</a>
+<a href="http://tamkovich.com/tag/telehouse/" class="tag-link-18" title="2 записи" style="font-size: 10.333333333333pt;">Telehouse</a>
+<a href="http://tamkovich.com/tag/tesla/" class="tag-link-23" title="1 запись" style="font-size: 8pt;">Tesla</a>
+<a href="http://tamkovich.com/tag/timerfd/" class="tag-link-11" title="1 запись" style="font-size: 8pt;">timerfd</a>
+<a href="http://tamkovich.com/tag/wi-fi/" class="tag-link-13" title="3 записи" style="font-size: 11.888888888889pt;">Wi-Fi</a>
+<a href="http://tamkovich.com/tag/wordpress/" class="tag-link-36" title="2 записи" style="font-size: 10.333333333333pt;">wordpress</a>
+<a href="http://tamkovich.com/tag/xmpp/" class="tag-link-21" title="1 запись" style="font-size: 8pt;">xmpp</a>
+<a href="http://tamkovich.com/tag/ztdummy/" class="tag-link-9" title="1 запись" style="font-size: 8pt;">ztdummy</a>
+<a href="http://tamkovich.com/tag/glonass/" class="tag-link-61" title="6 записей" style="font-size: 15.12962962963pt;">ГЛОНАСС</a>
+<a href="http://tamkovich.com/tag/%d0%b3%d1%80%d0%b5%d1%86%d0%b8%d1%8f/" class="tag-link-93" title="2 записи" style="font-size: 10.333333333333pt;">Греция</a>
+<a href="http://tamkovich.com/tag/success-story/" class="tag-link-37" title="4 записи" style="font-size: 13.185185185185pt;">История успеха</a>
+<a href="http://tamkovich.com/tag/crete/" class="tag-link-74" title="4 записи" style="font-size: 13.185185185185pt;">Крит</a>
+<a href="http://tamkovich.com/tag/moscow/" class="tag-link-40" title="2 записи" style="font-size: 10.333333333333pt;">Москва</a>
+<a href="http://tamkovich.com/tag/obninsk/" class="tag-link-94" title="2 записи" style="font-size: 10.333333333333pt;">Обнинск</a>
+<a href="http://tamkovich.com/tag/ryazan/" class="tag-link-63" title="2 записи" style="font-size: 10.333333333333pt;">Рязань</a></div>
+</div></li><li class="tab fwttl1"><h3 class="fwTabTitle">Мета</h3><div class="tab-content" style="height: 488px;">			<ul>
+			<li><a href="http://tamkovich.com/wp-login.php?action=register">Регистрация</a></li>			<li><a href="http://tamkovich.com/wp-login.php">Войти</a></li>
+			<li><a href="http://tamkovich.com/feed/" title="Подпишитесь на RSS-ленту этого сайта"><abbr title="Really Simple Syndication">RSS</abbr> записей</a></li>
+			<li><a href="http://tamkovich.com/comments/feed/" title="Последние комментарии ко всем записям в RSS"><abbr title="Really Simple Syndication">RSS</abbr> комментариев</a></li>
+			<li><a href="http://ru.wordpress.org/" title="Сайт работает на WordPress — современной персональной платформе для публикаций.">WordPress.org</a></li>						</ul>
+</div></li></ul><div style="display: block;"><div class="tab-content" style="height: 488px;"><div class="tagcloud"><a href="http://tamkovich.com/tag/addpac/" class="tag-link-42" title="3 записи" style="font-size: 11.888888888889pt;">addpac</a>
+<a href="http://tamkovich.com/tag/agi/" class="tag-link-45" title="2 записи" style="font-size: 10.333333333333pt;">AGI</a>
+<a href="http://tamkovich.com/tag/asterisk-timer/" class="tag-link-12" title="1 запись" style="font-size: 8pt;">asterisk timer</a>
+<a href="http://tamkovich.com/tag/calea/" class="tag-link-25" title="1 запись" style="font-size: 8pt;">CALEA</a>
+<a href="http://tamkovich.com/tag/cuda/" class="tag-link-22" title="1 запись" style="font-size: 8pt;">CUDA</a>
+<a href="http://tamkovich.com/tag/dahdi_dummy/" class="tag-link-10" title="1 запись" style="font-size: 8pt;">dahdi_dummy</a>
+<a href="http://tamkovich.com/tag/fax/" class="tag-link-52" title="2 записи" style="font-size: 10.333333333333pt;">fax</a>
+<a href="http://tamkovich.com/tag/fxo/" class="tag-link-43" title="2 записи" style="font-size: 10.333333333333pt;">fxo</a>
+<a href="http://tamkovich.com/tag/gps/" class="tag-link-60" title="5 записей" style="font-size: 14.222222222222pt;">GPS</a>
+<a href="http://tamkovich.com/tag/gsm/" class="tag-link-34" title="5 записей" style="font-size: 14.222222222222pt;">GSM</a>
+<a href="http://tamkovich.com/tag/ibm/" class="tag-link-50" title="6 записей" style="font-size: 15.12962962963pt;">IBM</a>
+<a href="http://tamkovich.com/tag/iphone/" class="tag-link-70" title="4 записи" style="font-size: 13.185185185185pt;">iPhone</a>
+<a href="http://tamkovich.com/tag/jabber/" class="tag-link-20" title="1 запись" style="font-size: 8pt;">jabber</a>
+<a href="http://tamkovich.com/tag/kamailio/" class="tag-link-46" title="10 записей" style="font-size: 17.592592592593pt;">Kamailio</a>
+<a href="http://tamkovich.com/tag/mysql/" class="tag-link-55" title="3 записи" style="font-size: 11.888888888889pt;">MySQL</a>
+<a href="http://tamkovich.com/tag/nvidia/" class="tag-link-24" title="3 записи" style="font-size: 11.888888888889pt;">nVidia</a>
+<a href="http://tamkovich.com/tag/opencv/" class="tag-link-83" title="3 записи" style="font-size: 11.888888888889pt;">OpenCV</a>
+<a href="http://tamkovich.com/tag/openser/" class="tag-link-47" title="3 записи" style="font-size: 11.888888888889pt;">OpenSER</a>
+<a href="http://tamkovich.com/tag/opensource/" class="tag-link-96" title="2 записи" style="font-size: 10.333333333333pt;">opensource</a>
+<a href="http://tamkovich.com/tag/ps3/" class="tag-link-58" title="5 записей" style="font-size: 14.222222222222pt;">PS3</a>
+<a href="http://tamkovich.com/tag/raid/" class="tag-link-51" title="2 записи" style="font-size: 10.333333333333pt;">RAID</a>
+<a href="http://tamkovich.com/tag/rfc2833/" class="tag-link-8" title="1 запись" style="font-size: 8pt;">rfc2833</a>
+<a href="http://tamkovich.com/tag/shell/" class="tag-link-97" title="2 записи" style="font-size: 10.333333333333pt;">shell</a>
+<a href="http://tamkovich.com/tag/sip/" class="tag-link-30" title="23 записи" style="font-size: 22pt;">SIP</a>
+<a href="http://tamkovich.com/tag/sipp/" class="tag-link-68" title="2 записи" style="font-size: 10.333333333333pt;">sipp</a>
+<a href="http://tamkovich.com/tag/skype/" class="tag-link-54" title="2 записи" style="font-size: 10.333333333333pt;">Skype</a>
+<a href="http://tamkovich.com/tag/sms/" class="tag-link-32" title="2 записи" style="font-size: 10.333333333333pt;">SMS</a>
+<a href="http://tamkovich.com/tag/snmp/" class="tag-link-15" title="2 записи" style="font-size: 10.333333333333pt;">snmp</a>
+<a href="http://tamkovich.com/tag/sony/" class="tag-link-64" title="7 записей" style="font-size: 15.777777777778pt;">Sony</a>
+<a href="http://tamkovich.com/tag/spa/" class="tag-link-14" title="1 запись" style="font-size: 8pt;">spa</a>
+<a href="http://tamkovich.com/tag/t38/" class="tag-link-53" title="4 записи" style="font-size: 13.185185185185pt;">t38</a>
+<a href="http://tamkovich.com/tag/telehouse/" class="tag-link-18" title="2 записи" style="font-size: 10.333333333333pt;">Telehouse</a>
+<a href="http://tamkovich.com/tag/tesla/" class="tag-link-23" title="1 запись" style="font-size: 8pt;">Tesla</a>
+<a href="http://tamkovich.com/tag/timerfd/" class="tag-link-11" title="1 запись" style="font-size: 8pt;">timerfd</a>
+<a href="http://tamkovich.com/tag/wi-fi/" class="tag-link-13" title="3 записи" style="font-size: 11.888888888889pt;">Wi-Fi</a>
+<a href="http://tamkovich.com/tag/wordpress/" class="tag-link-36" title="2 записи" style="font-size: 10.333333333333pt;">wordpress</a>
+<a href="http://tamkovich.com/tag/xmpp/" class="tag-link-21" title="1 запись" style="font-size: 8pt;">xmpp</a>
+<a href="http://tamkovich.com/tag/ztdummy/" class="tag-link-9" title="1 запись" style="font-size: 8pt;">ztdummy</a>
+<a href="http://tamkovich.com/tag/glonass/" class="tag-link-61" title="6 записей" style="font-size: 15.12962962963pt;">ГЛОНАСС</a>
+<a href="http://tamkovich.com/tag/%d0%b3%d1%80%d0%b5%d1%86%d0%b8%d1%8f/" class="tag-link-93" title="2 записи" style="font-size: 10.333333333333pt;">Греция</a>
+<a href="http://tamkovich.com/tag/success-story/" class="tag-link-37" title="4 записи" style="font-size: 13.185185185185pt;">История успеха</a>
+<a href="http://tamkovich.com/tag/crete/" class="tag-link-74" title="4 записи" style="font-size: 13.185185185185pt;">Крит</a>
+<a href="http://tamkovich.com/tag/moscow/" class="tag-link-40" title="2 записи" style="font-size: 10.333333333333pt;">Москва</a>
+<a href="http://tamkovich.com/tag/obninsk/" class="tag-link-94" title="2 записи" style="font-size: 10.333333333333pt;">Обнинск</a>
+<a href="http://tamkovich.com/tag/ryazan/" class="tag-link-63" title="2 записи" style="font-size: 10.333333333333pt;">Рязань</a></div>
+</div></div></div></div><li id="get-recent-comments" class="widget widget_get_recent_comments"><h2 class="widgettitle">Комментарии</h2>
+<div id="get_recent_comments_wrap"><ul>	vmware (2015-11-18 03:17): <a href="http://tamkovich.com/2014/06/usage-of-openddr/#comment-1832" title="Опыт использования OpenDDR, 2014-06-10">Сайт хороший жалко загнулся</a><br>
+	Влад (2015-11-14 04:34): <a href="http://tamkovich.com/2010/05/remove-old-files-from-cron/#comment-1831" title="Регулярное удаление старых файлов с помощью cron и find, 2010-05-24">Я извиняюсь. пытаюсь разобраться в этом corn сам совсем не программист. Но не как не могу понять куда вводить эту строчку....</a><br>
+	ivan (2015-09-17 11:17): <a href="http://tamkovich.com/2009/12/ibm-integrated-management-module-imm/#comment-1830" title="IBM Integrated Management Module (IMM), 2009-12-29">Спасибо сегодня такой же вставил</a><br>
+	ivan (2015-07-17 14:42): <a href="http://tamkovich.com/2009/12/ibm-integrated-management-module-imm/#comment-1829" title="IBM Integrated Management Module (IMM), 2009-12-29">Буржуи, сервер и так купили у них, так еще и плюшки за деньги</a><br>
+	Antonio (2015-05-25 00:08): <a href="http://tamkovich.com/2010/05/remove-old-files-from-cron/#comment-1828" title="Регулярное удаление старых файлов с помощью cron и find, 2010-05-24">Спасибо, интересно</a><br>
+	adward (2015-05-24 06:44): <a href="http://tamkovich.com/2009/09/unable-to-create-directory-wp-content-uploads-is-its-parent-directory-writable-by-the-server/#comment-1826" title="Не могу создать директорию /wp-content/uploads/. Проверьте, доступна ли родительская директория для записи., 2009-09-05">я кстати, обратил внимание, что на моём сайте всё работает не под юзером root но всеравно вылетает эта ошибка.</a><br>
+	adward (2015-05-24 06:29): <a href="http://tamkovich.com/2009/09/unable-to-create-directory-wp-content-uploads-is-its-parent-directory-writable-by-the-server/#comment-1825" title="Не могу создать директорию /wp-content/uploads/. Проверьте, доступна ли родительская директория для записи., 2009-09-05">Илья, Вы пишете Я удалил @ в wp-settings перед mkdir(). я зашёл в wp-settings и не могу найти там mkdir() … или...</a><br>
+	Valentin (2015-01-15 05:56): <a href="http://tamkovich.com/2011/06/defending-asterisk-from-sip-flood-with-iptables/#comment-1824" title="Защита Asterisk от SIP атак с помощью iptables, 2011-06-18">Несмотря на приличный срок давности этой статьи, имеются существенные и верные описания правил для файервола…</a><br>
+	Наталья (2015-01-14 00:39): <a href="http://tamkovich.com/2011/05/black-lines-in-pdftohtml-output/#comment-1823" title="Чёрные полосы в выводе программы PDFTOHTML, 2011-05-16">Столкнулась с данной проблемой в iOs. Очень ценная рекомендация по открытию через ридер. Черные полосы исчезли. Спасибо!</a><br>
+	Александр (2014-11-01 21:21): <a href="http://tamkovich.com/2010/06/asterisk-kamailio-integration/#comment-1822" title="Интеграция Asterisk 1.6.2 и Kamailio 3.0.x, 2010-06-04">Почему пропало сообщение 401 auth от asterisk при регистрации со стороны kamailio, разве астериск сразу принимает...</a><br>
+</ul></div></li>
+
+<br>
+<center>
+<!-- HotLog -->
+<script type="text/javascript" language="javascript">
+hotlog_js="1.0"; hotlog_r=""+Math.random()+"&s=2039057&im=132&r="+
+escape(document.referrer)+"&pg="+escape(window.location.href);
+document.cookie="hotlog=1; path=/"; hotlog_r+="&c="+(document.cookie?"Y":"N");
+</script>
+<script type="text/javascript" language="javascript1.1">
+hotlog_js="1.1"; hotlog_r+="&j="+(navigator.javaEnabled()?"Y":"N");
+</script>
+<script type="text/javascript" language="javascript1.2">
+hotlog_js="1.2"; hotlog_r+="&wh="+screen.width+"x"+screen.height+"&px="+
+(((navigator.appName.substring(0,3)=="Mic"))?screen.colorDepth:screen.pixelDepth);
+</script>
+<script type="text/javascript" language="javascript1.3">
+hotlog_js="1.3";
+</script>
+<script type="text/javascript" language="javascript">
+hotlog_r+="&js="+hotlog_js;
+document.write('<a href="http://click.hotlog.ru/?2039057" target="_top"><img '+
+'src="http://hit33.hotlog.ru/cgi-bin/hotlog/count?'+
+hotlog_r+'" border="0" width="88" height="31" alt="HotLog"><\/a>');
+</script><a href="http://click.hotlog.ru/?2039057" target="_top"><img src="mingw-qt-eclipse_files/count.gif" alt="HotLog" width="88" height="31" border="0"></a>
+<noscript>
+<a href="http://click.hotlog.ru/?2039057" target="_top"><img
+src="http://hit33.hotlog.ru/cgi-bin/hotlog/count?s=2039057&im=132" border="0"
+width="88" height="31" alt="HotLog"></a>
+</noscript>
+<!-- /HotLog -->
+<br>
+<!--LiveInternet counter--><script type="text/javascript"><!--
+document.write("<a href='http://www.liveinternet.ru/click' "+
+"target=_blank><img src='http://counter.yadro.ru/hit?t25.6;r"+
+escape(document.referrer)+((typeof(screen)=="undefined")?"":
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+";h"+escape(document.title.substring(0,80))+";"+Math.random()+
+"' alt='' title='LiveInternet: показано число посетителей за"+
+" сегодня' "+
+"border='0' width='88' height='15'><\/a>")
+//--></script><a href="http://www.liveinternet.ru/click" target="_blank"><img src="mingw-qt-eclipse_files/hit.gif" alt="" title="LiveInternet: показано число посетителей за сегодня" width="88" height="15" border="0"></a><!--/LiveInternet-->
+<br>
+<!--Openstat-->
+<span id="openstat2065040"><a target="_blank" href="http://rating.openstat.ru/site/2065040"><img alt="Openstat" src="mingw-qt-eclipse_files/digits.gif" border="0"></a></span><script type="text/javascript"> var openstat = { counter: 2065040, image: 5012, next: openstat , track_links: "all" }; document.write(unescape("%3Cscript%20src=%22http" +
+(("https:" == document.location.protocol) ? "s" : "") +
+"://openstat.net/cnt.js%22%20defer=%22defer%22%3E%3C/script%3E")); </script><script src="mingw-qt-eclipse_files/cnt.js" defer="defer"></script>
+<!--Openstat-->
+<br>
+<a href="http://blogs.yandex.ru/button/?id=10031911&amp;type=rating"><img src="mingw-qt-eclipse_files/10031911-rating-white-male.gif" alt="Рейтинг блогов" width="80" border="0"></a>
+</center><br><br><br>
+	
+	
+				</div>
+			</div>
+
+<div class="left_side">
+			
+		<h2><a href="http://tamkovich.com/2011/07/mingw-qt-eclipse/" rel="bookmark" title="Permanent Link to MinGW + QT + Eclipse">
+	MinGW + QT + Eclipse</a>  </h2>
+	<h3>Июль 2nd, 2011 by Сергей Тамкович</h3>
+<span class="metapost">Категории:</span>
+    <a href="http://tamkovich.com/programming/" title="Просмотреть все записи в рубрике «Программирование»" rel="category tag">Программирование</a>    &nbsp;&nbsp;
+    <a href="http://tamkovich.com/2011/07/mingw-qt-eclipse/#comments" title="Прокомментировать запись «MinGW + QT + Eclipse»"><span class="metacmt">6&nbsp;Комментарии</span></a> 	
+	<p></p><p align="justify">
+Периодически возникает необходимость написать программу для Windows. 
+Обычно для этих целей я использую редактор Vim для Windows и 
+интерпретатор Perl от ActiveState. Всё меняется если необходимо 
+приложение с графическим интерфейсом да ещё и легко переносимое. 
+Дистрибутив Perl и набор необходимых модулей — не самый удобный довесок к
+ вашей программе.
+</p>
+<p align="justify">
+В бытность мою студентом, мы, с однокурсниками и преподавателями, 
+активно пользовались продуктами фирмы Borland — Turbo C, Borland C++ 
+Builder и даже Borland Delphi — для студентов послабее :) Изучив 
+современные предпочтения пользователей  torrent сетей, с удивлением 
+обнаружил, что последний Borland C++ Builder выпущен около десяти лет 
+назад. Вероятно фирма Borland ушла в верхнюю тундру. Так что же у нас 
+есть сегодня, кроме Microsoft Visual Studio, который мне никогда не 
+нравился?
+</p>
+<p><span id="more-2188"></span></p>
+<p align="justify">
+А есть, у нас, не мало. За 10 лет появилось большое количество 
+качественных IDE с открытым исходным кодом. Если Вас интересует 
+исключительно программирование на Си/Си++ — следует обратить внимание на
+ <a href="http://www.codeblocks.org/downloads/26">Code::Blocks</a> или на <a href="http://qt.nokia.com/products/library">QT SDK</a>.
+ Обе IDE доступны в сборке с компилятором MinGW т.е. установив всего 
+лишь один пакет вы получаете полностью готовую к работе IDE. 
+Code::Blocks заточена на работу с кросс-платформенной библиотекой 
+wxWindows (она же wxWidgets), отличается малым размером, простотой и 
+удобством. QT SDK — среда разработки от финской фирмы Nokia, 
+рассчитанная на работу, как это не странно, с библиотекой QT. 
+Обеспечивает большое количество красивостей и удобство работы — прямо из
+ коробки. Есть ещё и третий вариант — который подойдёт для тех, кто не 
+занимается программированием на Си/Си++ фуллтайм. Обновите процессор, 
+запаситесь оперативной памятью и терпением, речь пойдёт об универсальной
+ IDE — Eclipse.
+</p>
+<p align="justify">
+Отложите в сторону ваш нетбук, Eclipse написан на Java. Обратной 
+стороной этого является доступность Eclipse практически под любую 
+платформу. Вы можете иметь одинаковую среду разработки дома на Mac, на 
+Linux на работе и даже на ноутбуке с Windows. Eclipse, чрезвычайно 
+гибкая среда разработки — поддержка различных языков, дебагеров, 
+багтрекеров, систем контроля версий и прочего — реализована с помощью 
+модулей. Гибкость редко коррелирует с простотой — новичка может 
+отпугнуть огромное количество настроек и плагинов к Eclipse. С другой 
+стороны держать все свои проекты — на Perl, PHP, C/C++ и многих других 
+языках в одной IDE иметь возможность моментально переключаться между 
+ними — очень большое удобство, привыкнув к которому, можно закрыть глаза
+ на все недостатки.
+</p>
+<p align="justify">
+Для отрисовки GUI, лично мне, больше всего, нравится вышеупомянутая 
+библиотека QT. Кроссплатформенность, активное развитие, большое 
+количество пользователей/разработчиков и их форумов — на подавляющую 
+часть ваших будущих вопросов по QT — уже ответили :). К сожалению 
+установить среду основанную на Eclipse для работы с QT под Windows одним
+ пакетом не получится — сегодня такого пакета нет и, скорее всего, его 
+не будет. Для организации среды понадобится выполнить следующие 
+действия:
+</p>
+<ol>
+<li> Скачиваем <a href="http://sourceforge.net/projects/mingw/files/Automated%20MinGW%20Installer/mingw-get-inst/mingw-get-inst-20110530/mingw-get-inst-20110530.exe/download">Automated MinGW Installer</a> и устанавливаем его, не забываем отметить g++ и msys — в хозяйстве пригодится.
+</li><li> Скачиваем <a href="http://qt.nokia.com/downloads/windows-cpp">Qt libraries 4.7.3 for Windows (minGW 4.4, 319 MB)</a> и устанавливаем их.
+</li><li> Если у вас ещё нет Eclipse — скачайте и распакуйте <a href="http://eclipse.org/downloads/packages/eclipse-ide-cc-developers-includes-incubating-components/indigor">Eclipse IDE for C/C++ Developers</a> с официального сйта. Если Eclipse уже есть, следует установить к нему плагин под названием CDT.
+</li><li> Скачиваем и устанавливаем <a href="http://get.qt.nokia.com/qteclipse/qt-eclipse-integration-win32-1.6.1.exe">Qt Eclipse Integration for C++</a> — как можно догадаться из названия, этот пакет добавит поддержку QT в Eclipse.
+</li><li> Теперь, когда скачаны и установлены все компоненты, необходимо
+ прописать переменные окружения в Windows. Для установки переменных 
+окружения в Windows Vista (и, вероятно, Windows 7) следует выбрать: 
+Компьютер — Свойства — Дополнительные параметры системы — Переменные 
+Среды. Далее необходимо добавить к переменной Path путь к бинарным 
+файлам MinGW — C:\MinGW\bin. К переменной Lib необходимо добавить пути 
+C:\MinGW\lib и C:\Qt\4.7.3\lib — если переменной Lib увас нет — создайте
+ её. Теперь добавим пути к переменной Include — C:\MinGW\include и 
+C:\Qt\4.7.3\include — если такой переменной нет — создайте её.
+</li></ol>
+<p align="justify">
+Вот и всё, среда для создания QT программ на операционной системе 
+Windows — готова. Теперь можно писать самые разнообразные ненужные 
+программы :)
+</p>
+<p></p><center><br>
+<img src="mingw-qt-eclipse_files/qt.png" alt="QT программа созданная в Eclipse и MinGW" border="0"><br>
+</center><p></p>
+<p align="justify">
+Если этого покажется мало, сюда можно добавить библиотеку OpenCV для 
+обработки изображений и работы с USB камерам и библиотеку Sofia-<a href="http://tamkovich.com/tag/sip/">SIP</a> от нашей любимой Nokia. И у вас получится среда для разработки видеотелефона :) Удачного программирования!</p>
+<div class="related-posts">
+<div id="related-posts-MRP_all" class="related-posts-type">
+<h2>Похожие статьи</h2>
+<ul>
+<li><a href="http://tamkovich.com/2011/12/opencv-car-plate-auto-recognition/">OpenCV: Распознавание номерных знаков</a></li>
+<li><a href="http://tamkovich.com/2011/11/indent/">indent - форматирование Си файлов</a></li>
+<li><a href="http://tamkovich.com/2011/02/how-to-write-unmaintainable-code/">Как писать неподдерживаемый код, застрахуй свою работу :)</a></li>
+<li><a href="http://tamkovich.com/2010/02/c-split-string/">Как разделить строку в Си</a></li>
+<li><a href="http://tamkovich.com/2009/01/proper-curly-brackets-in-c/">Как правильно расставлять фигурные скобки в Си</a></li>
+</ul></div>
+</div><p></p>
+	
+	  <p class="entry-footer">
+</p><center>
+« <a href="http://tamkovich.com/2011/06/vrublevsky-busted/" rel="prev">ФСБ задержала Павла Врублёвского</a> | 
+<a href="http://tamkovich.com/2011/08/kss-from-softkey/" rel="next">Приключения с KSS от компании Softkey</a> »</center>
+<br><br><span class="metapost">Категории:</span>
+    <a href="http://tamkovich.com/programming/" title="Просмотреть все записи в рубрике «Программирование»" rel="category tag">Программирование</a>    &nbsp;&nbsp;
+        <a href="http://tamkovich.com/2011/07/mingw-qt-eclipse/#comments" title="Прокомментировать запись «MinGW + QT + Eclipse»"><span class="metacmt">6&nbsp;Комментарии</span></a>  <p></p>
+	
+				
+<!-- You can start editing here. -->
+
+	<h3 id="comments">6 Responses to “MinGW + QT + Eclipse”</h3> 
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-837">
+			<div class="cmtinfo"><em>on 27 Июл 2011 at 02:12 <small class="commentmetadata"><a href="#comment-837" title="">&nbsp;</a> </small></em><cite>test</cite></div>
+						<br>
+
+			<p>настоящим программистам IDE не нужна<br>
+а если и понадобится, то тогда уж лучше легкий VC, чем толстый неуклюжий и прожорливый Eclise<br>
+вот уж дествительно нетбук после Eclipse загнется</p>
+			
+		</li>
+
+	
+	
+		<li class="" id="comment-842">
+			<div class="cmtinfo"><em>on 02 Авг 2011 at 13:18 <small class="commentmetadata"><a href="#comment-842" title="">&nbsp;</a> </small></em><cite>rius</cite></div>
+						<br>
+
+			<p>Настоящие программисты пишут сразу в машинных кодах. Ну или на худой конец на ассемблере :))</p>
+			
+		</li>
+
+	
+	
+		<li class="alt" id="comment-845">
+			<div class="cmtinfo"><em>on 04 Авг 2011 at 22:24 <small class="commentmetadata"><a href="#comment-845" title="">&nbsp;</a> </small></em><cite><a href="http://tamkovich.com/" rel="external nofollow" class="url">Сергей Тамкович</a></cite></div>
+						<br>
+
+			<p>Да-да, а ещё «всем хватит 640 килобайт оперативной памяти». 
+Настоящие программисты получают нормальное вознаграждение за свой труд, и
+ могут позволить себе нормальный ноутбук, а шлаком, под модным названием
+ «нетбук», свой инвентарь забивать не будут.</p>
+			
+		</li>
+
+	
+	
+		<li class="" id="comment-951">
+			<div class="cmtinfo"><em>on 18 Сен 2011 at 22:13 <small class="commentmetadata"><a href="#comment-951" title="">&nbsp;</a> </small></em><cite><a href="http://rumata.dragons.ru/" rel="external nofollow" class="url">DonRumata</a></cite></div>
+						<br>
+
+			<p>хорошая статья, только эклипс мне не понравился, какой-то он 
+действительно толстый, неуклюжий, обрюзглый, года три назад правда 
+смотрел его.</p>
+			
+		</li>
+
+	
+	
+		<li class="alt" id="comment-977">
+			<div class="cmtinfo"><em>on 15 Ноя 2011 at 16:53 <small class="commentmetadata"><a href="#comment-977" title="">&nbsp;</a> </small></em><cite>kulpanov</cite></div>
+						<br>
+
+			<p>плюс, всё что нужно чтобы начать!<br>
+и ecplise гораздо быстрее-легче чем об нём думают<br>
+жаль только, что nokia прекратила офицальную поддержку<br>
+qt integration for eclipse — посему уже на indigo есть проблемы.<br>
+это тоже нужно знать, прежде чем начинать!</p>
+			
+		</li>
+
+	
+	
+		<li class="" id="comment-1074">
+			<div class="cmtinfo"><em>on 31 Май 2012 at 18:56 <small class="commentmetadata"><a href="#comment-1074" title="">&nbsp;</a> </small></em><cite>Xandr</cite></div>
+						<br>
+
+			<p>Компания Borland ушла в разработку софта для бизнес-процессов, 
+запродав среды разработки Embercadero. Embercadero RAD Studio есть как 
+минимум 2010-го, но и CBuilder 6 они продолжают продавать за 
+немилосердные деньги.</p>
+<p>А Eclipse… Мда. Первое впечатление удручающее…<br>
+CodeBlock, также увиденный впервые куда удобнее.</p>
+			
+		</li>
+
+	
+	
+	</ol>
+
+ <div class="post-content">
+<p>
+	<a href="http://tamkovich.com/2011/07/mingw-qt-eclipse/feed/">Подписаться на комментарии</a></p>
+</div>
+
+
+<br>
+<h2>Оставить отзыв</h2>
+
+
+<form action="http://tamkovich.com/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input name="author" id="author" class="textbox" size="22" tabindex="1" type="text">
+<label for="author"><small>Имя </small></label></p>
+
+<p><input name="email" id="email" class="textbox" size="22" tabindex="2" type="text">
+<label for="email"><small>Mail</small></label></p>
+
+<p><input name="url" id="url" class="textbox" size="22" tabindex="3" type="text">
+<label for="url"><small>Website</small></label></p>
+
+<p></p>
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea><div id="captchaImgDiv">
+
+<div class="captchaSizeDivLarge"><img id="si_image_com" class="si-captcha" src="mingw-qt-eclipse_files/securimage_show.png" alt="CAPTCHA изображение" title="CAPTCHA изображение" width="175" height="60">
+    <input id="si_code_com" name="si_code_com" value="aq2lycpsX16lt54P" type="hidden">
+    <div id="si_refresh_com">
+<a href="#" rel="nofollow" title="Обновить изображение" onclick="si_captcha_refresh('si_image_com','com','/wp-content/plugins/si-captcha-for-wordpress/captcha','http://tamkovich.com/wp-content/plugins/si-captcha-for-wordpress/captcha/securimage_show.php?si_form_id=com&amp;prefix='); return false;">
+      <img class="captchaImgRefresh" src="mingw-qt-eclipse_files/refresh.png" alt="Обновить изображение" onclick="this.blur();" width="22" height="20"></a>
+  </div>
+  </div>
+<div id="captchaInputDiv"><input id="captcha_code" name="captcha_code" tabindex="4" type="text">
+ <label id="captcha_code_label" for="captcha_code">CAPTCHA Code</label><span class="required"> *</span>
+ </div>
+</div></p>
+
+<p><input name="submit" id="submit" tabindex="5" value="Готово!" type="submit">
+<input name="comment_post_ID" value="2188" type="hidden">
+</p>
+
+
+      <script type="text/javascript">
+          var sUrlInput = document.getElementById("comment");
+                  var oParent = sUrlInput.parentNode;
+          var sSubstitue = document.getElementById("captchaImgDiv");
+                  oParent.appendChild(sSubstitue, sUrlInput);
+      </script>
+            <noscript>
+          <style type='text/css'>#submit {display:none;}</style><br />           <input name="submit" type="submit" id="submit-alt" tabindex="6" value="Отправить комментарий" />
+          </noscript>
+  
+	<p class="comment-form-ant-spm" style="clear: both; display: none;">
+		<strong>Current <span style="display:none;">month</span> <span style="display:inline;">ye@r</span> <span style="display:none;">day</span></strong> <span class="required">*</span>
+		<input name="ant-spm-a" id="ant-spm-a" value="2016" type="hidden">
+		<input name="ant-spm-q" id="ant-spm-q" size="30" value="2016" type="text">
+	</p>
+	
+	<p class="comment-form-ant-spm-2" style="display:none;">
+		<strong>Leave this field empty</strong> <span class="required">*</span>
+		<input name="ant-spm-e-email-url" id="ant-spm-e-email-url" size="30" type="text">
+	</p>
+	
+</form>
+
+
+
+	
+			
+
+	
+</div>
+
+		</div>
+<div id="footer">
+			<div class="padding">
+				Copyright © Tamkovich.com: Телеком/VoIP блог | <a href="http://voipsolutions.ru/" title="VoIP Solutions: Development, Integration, Consulting">VoIP Solutions</a>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="mingw-qt-eclipse_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8776847-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+
+
+<iframe id="349b6910333efc3c" src="mingw-qt-eclipse_files/Store.htm" style="position: absolute; width: 1px; height: 1px; left: -100px; top: -100px; visibility: hidden;" class="ver660128"></iframe></body></html>
+<!-- Dynamic Page Served (once) in 0.254 seconds -->

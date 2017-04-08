@@ -1,0 +1,159 @@
+
+                                      (android qt разработка приложени)
+>>                                           (“становка Qt под Android) http://blog.harrix.org/article/2417
+>> (‘борка и запуск Qt приложения на платформе Android в среде Windows) http://re-vkolesnikov.blogspot.com/2013/09/qt-android-windows.html
+>>      (Cоздание простейшего приложение в Qt и запуск его под Android) http://blog.harrix.org/article/2651
+>>                          (EVILEG ** Qt уроки с подробными примерами) http://www.evileg.ru/uroki-po-qt-s-podrobnymi-primerami
+>>                                              (Hello android from qt) https://habrahabr.ru/post/255597/
+>>                               (ђазработка приложениЯ Qt под Android) https://sites.google.com/site/ecspertiza/stati/qt/razrabotka-prilozenia-qt-pod-android
+
+>>                                                                       (Eclipse + QT: установка и настройка) https://habrahabr.ru/post/30636/
+>> (“становка Eclipse и подключение плагина Android Development Tools (ADT) длЯ разработки андроид-приложений) http://www.fandroid.info/ustanovka-eclipse-i-podklyuchenie-plagina-android-development-tools-adt-dlya-razrabotki-android-prilozhenij/
+>>                                                 (процесс установки и настройки фрэймворка Qt 5 длЯ Android) http://it-cat.biz/ru/razrabotka-po/ustanovka-i-nastroyka-qt-5-dlya-android
+>>                                                                                          (Qt Documentation) http://doc.qt.io/qt-5/androidgs.html
+>>                                   (ЏравильнаЯ установка JDK + Eclipse + Android SDK + ADT Plugin - Android) http://www.cyberforum.ru/android-dev/thread417834.html
+>>                                      (Ћтладка кода системного уровнЯ Java*/C++ Code длЯ платформы Android*) https://software.intel.com/ru-ru/articles/android-system-level-javac-code-debugging
+                                                                                                               http://webhamster.ru/mytetrashare/index/mtb0/1389188506pjpk70s9qf
+>>                                                                                      (MinGW + QT + Eclipse) http://tamkovich.com/2011/07/mingw-qt-eclipse/
+                                                                                                               > https://sourceforge.net/projects/mingw/files/
+																											   > http://knzsoft.ru/qt4-mingw-cmake/ | http://qt-project.org/downloads 
+																											     >> http://itblogger.org.ua/intehratsiya-qt-v-eclipse/ | http://itblogger.org.ua/android-z-choho-pochaty/
+																												    >>> http://itblogger.org.ua/intehratsiya-qt-v-eclipse/ | http://itblogger.org.ua/intehratsiya-qt-v-eclipse/#more-208 | http://itblogger.org.ua/android-z-choho-pochaty/ 
+																													>>> http://android-sdk.ru.softonic.com/ | http://soft.mydiv.net/win/download-Android-SDK.html | https://www.projectrhea.org/rhea/index.php/Eclipse_Qt_Integration_-_Getting_Started
+																											     >> https://download.qt.io/archive/qt/4.7/ | http://allnokia.ru/symbsoft/moreinfo-6161.htm | https://seclub.org/dn.php?d=5&r=1&c=24&fd=7873
+																											     >> http://qtlinux.narod.ru/install_mingw.htm
+																											   > http://qt-eclipse-integration.software.informer.com/1.6/ | http://qt-eclipse-integration.software.informer.com/download/
+>>                                                        (“становка Eclipse и NDK длЯ разработки под Android) http://microsin.net/programming/android/eclipse-kepler-install.html
+
+
+
+>> (Qt - руководство длЯ новичков - C++ Qt) http://www.cyberforum.ru/qt/thread79698.html
+
+>> (итак, длЯ того чтобы равзернуть удобную среду длЯ разработке на qt внутри винды нам нужно) http://remake.net.ru/forums/index.php?showtopic=70520
+    -----------------------------------------------------------------------------------------
+1) поставить mingw (http://www.mingw.org/download.shtml)
+тут у нас есть несколько путей. ставим mingw и качаем то что нам нужно из инструментариЯ (gcc, cmake, make, ит.д.) или качаем уже готовый mingw (http://ftp.ntua.gr/pub/X11/Qt/qt/source/qt-win-opensource-4.4.0-mingw.exe) и тупо распаковываем.
+2) ставим qt
+http://trolltech.com/developer/downloads/qt/windows
+3) ставим eclipse
+http://www.eclipse.org/downloads/download....3.3.2-win32.zip
+4) ставим плагин на еклипс CDT
+http://www.eclipse.org/cdt/downloads.php (внимательно читать интсрукцию, плагин ставитсЯ через интерфейс еклипса)
+5) конфигурируем переменные среды
+в настройках модулЯ CDT необходимо указать путь до компилЯтора (в нашем случае путь\до\mingw\bin\gcc)
+6) ставим QT интеграцию на еклипс
+http://trolltech.com/developer/downloads/q...ration-download
+7) конфигурируем qt интеграцию
+необходимо в настройках модулЯ указать путь к библиотекам qt (установленных нами в шаге 2)
+>> https://unixforum.org/index.php?showtopic=101895
+>> (64bit Qt Eclipse, интеграциЯ длЯ C++ на Windows) https://forum.qt.io/topic/2957/64bit-qt-eclipse-integration-for-c-on-windows
+
+>> http://www.prog.org.ru/topic_1596_315.html
+   ------------------------------------------
+‘топ, вы спрашивали про "CDT-for-Windows.exe", а CDT это C/C++ Development Tools, плагин к Eclipse длЯ разработки программ на C/C++, и, по большому счету, к MinGW ни какого отношениЯ не имеет (кроме того что может использовать его длЯ компилЯции программ). MinGW это отдельный самостоЯтельный проект, порт на MS Windows набора компилЯторов из комплекта GCC, и он уж точно не имеет ни какого отношениЯ к Eclipse и Qt. ‚зЯть MinGW можно на оффициальном сайте - www.mingw.org, или скачать архив Qt с  MinGW от Trolltech.
+>> (MinGW + QT + Eclipse) http://tamkovich.com/2011/07/mingw-qt-eclipse/
+>> (Ћтладка кода системного уровнЯ Java*/C++ Code длЯ платформы Android*) https://software.intel.com/ru-ru/articles/android-system-level-javac-code-debugging
+>> http://download.qt.io/archive/qt/4.7/
+>> http://download.qt.io/archive/qt/4.8/4.8.3/
+>> http://www.dcs.vein.hu/bertok/oktatas/cpp_by_eclipse/eclipse_for_cpp_on_windows.html
+>> (Eclipse + QT: установка и настройка) https://habrahabr.ru/post/30636/
+>> (ЏравильнаЯ установка JDK + Eclipse + Android SDK + ADT Plugin - Android) http://www.cyberforum.ru/android-dev/thread417834.html
+
+>> http://it-cat.biz/ru/razrabotka-po/ustanovka-i-nastroyka-qt-5-dlya-android
+   --------------------------------------------------------------------------
+„лЯ поддержки платформы Android был разработан проект Nesessitas, который теперь входит в стандартную поставку Qt длЯ Android, начинаЯ с пЯтой версии, поэтому наша задача значительно упрощаетсЯ. ‘тоит обратить внимание, что нам понадобитсЯ длЯ загрузки версиЯ Qt длЯ Android, поэтому стоит быть внимательным при скачивании. Qt длЯ Linux, загруженнаЯ с сайта разработчика устанавливаетсЯ в отдельный каталог в домашней директории текущего пользователЯ, поэтому еЮ можно смело устанавливать параллельно с другими версиЯми Qt из репозиториев, если таковые имеютсЯ. Ќа ЏЉ в нашем примере уже была установлена Qt 4.8.4.
+>> (“становка Eclipse и подключение плагина Android Development Tools (ADT) длЯ разработки андроид-приложений) http://www.fandroid.info/ustanovka-eclipse-i-podklyuchenie-plagina-android-development-tools-adt-dlya-razrabotki-android-prilozhenij/
+>> (EGit/FAQ) http://download.eclipse.org/egit/updates/ >> http://wiki.eclipse.org/EGit/FAQ#Where_can_I_find_older_releases_of_EGit.3F >> http://archive.eclipse.org/egit/updates-0.8/
+
+>> (eclipse project archived downloads) http://archive.eclipse.org/eclipse/downloads/
+
+
+...............................................................
+>> http://itblogger.org.ua/intehratsiya-qt-v-eclipse/
+>> http://itblogger.org.ua/android-z-choho-pochaty/
+   -------------------------------
+>  C:\Users\‘аша\Downloads\eclipse
+>  C:\Users\‘аша\AppData\Local\Android\android-sdk
+>  D:\MinGW
+>  D:\workspaceEclipse
+>  D:\Qt
+>  C:\Qt
+>> The Eclipse Project Updates - http://download.eclipse.org/eclipse/updates/4.3
+>> Kepler - http://download.eclipse.org/releases/kepler
+>> CDT    - http://download.eclipse.org/tools/cdt/releases/galileo (https://www.projectrhea.org/rhea/index.php/Eclipse_Qt_Integration_-_Getting_Started)
+>> CDT(2) - http://download.eclipse.org/tools/cdt/releases/kepler
+>> CDT(3) - http://download.eclipse.org/tools/cdt/releases/juno
+>> CDT(4) - http://download.eclipse.org/tools/cdt/releases/ganymede
+>> ADT - https://dl-ssl.google.com/android/eclipse/
+>> https://habrahabr.ru/post/30636/
+>> http://tamkovich.com/2011/07/mingw-qt-eclipse/
+>> http://soft.mydiv.net/win/files-Android-SDK.html
+ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+>> (ђазвертывание приложениЯ на Qt / Windows) http://doc.crossplatform.ru/qt/4.3.2/deployment-windows.html
+>> () http://ru.stackoverflow.com/questions/430534/Ќе-запускаетсЯ-exe-файл
+   -------------------------------
+Project\
+Project\translations\my_program_ru.qm
+Project\sqldrivers\qsqlite.dll
+Project\platforms\qwindows.dll
+Project\Qt5Sql.dll
+Project\Qt5Widgets.dll
+Project\Qt5Xml.dll
+Project\Qt5Core.dll
+Project\Qt5Gui.dll
+Project\Qt5Network.dll
+Project\icuuc53.dll
+Project\icudt53.dll
+Project\icuin53.dll
+Project\libstdc++-6.dll
+Project\libgcc_s_dw2-1.dll
+Project\libwinpthread-1.dll
+Project\libeay32.dll
+Project\ssleay32.dll
+Project\my_program.exe
+   - - - - - - - - - - - - - - - -
+D:\Qt\4.8.3\plugins\sqldrivers\qsqlite4.dll
+ . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+(’очка входа в процедуру _Z5qFreePv не найдена в библиотеке DLL) http://www.prog.org.ru/topic_10823_0.html
+                                                                 http://www.cyberforum.ru/qt/thread813234.html
+                         (Qt SDK 4.8 статическаЯ сборка проекта) https://habrahabr.ru/post/152377/
+						                                         http://www.cyberforum.ru/qt/thread107080.html
+>> (Ќет виртуальной машины java был найден после поиска следующих мест: C:\eclipse\jre\javaw.exe) http://vpros.ru/3311-zatmenie-net-java-jre-s-s-jdk-net-virtualnoy-mashi
+...............................................................
+
+
+
+>> https://toster.ru/q/61124
+Android NDK (длЯ разработки на ‘++) такой же родной как как и Android SDK (длЯ разработки на Java).
+‚ крайнем случае - может потребоватьсЯ стыковка с джава-объектами, и тут вам потребуетсЯ изучать Android NDK, и возможно даже писать немного оберточного кода на Java.
+1. Qt - это всЮ-таки C++. ђазрабатывать на нЮм существенно сложнее, чем на Java. ’о есть дольше и с большим количеством ошибок.
+3. Java - роднаЯ платформа длЯ Android. Ћтсюда потенциальные проблемы с совместимостью у Qt.
+Ђ когда вы пишете под Android на Java - вы всегда пишете кусок кода работающий в колнтексте DalvikVM и должны жить по предусмотренным данной машиной паттернам и сценариЯм...
+…щЮ к слову про миф "на Java писать проще чем на C++"(если сравниваетсЯ Java под DalvikVM и C++\Qt5): Ќе забывайте - DalvikVM - это вам не JavaVM.
+Ђ когда вы пишете на Qt - у вас гарантирована поддержка единых механизмов длЯ всех платформ.
+Ќо из Qt - может быть сложно поиметь доступ к сугубо-андроидным сервисам типа поставщика данных. 
+
+
+  (Qt для Android (Necessitas Framework) – действительно ли это работает?) https://habrahabr.ru/post/125845/
+  
+  (Пишем игру "Жизнь" под Android используя C++ и Qt за час) http://pikabu.ru/story/pishem_igru_quotzhiznquot_pod_android_ispolzuya_c_i_qt_za_chas_3926549
+                                                             https://play.google.com/store/apps/details?id=com.mousemove.life
+                                                             https://cloud.mail.ru/public/AsLq/4y4hufCQ7
+															 
+  (Qt 5 Everywhere) https://play.google.com/store/apps/details?id=com.digia.Qt5Everywhere&hl=ru
+  
+  (Ќастройка Qt и Qt-Creator для создания приложений для Android) http://team.belykh.me/infusions/articles/articles.php?article_id=2
+
+  (Ћпыт разработки аркады под Android на С++ и Qt) https://habrahabr.ru/post/272423/
+  
+  
+  
+  
+  
+  
+  
+  (“далить Amisites.com из Chrome, Firefox и Internet Explorer, используЯ AdwCleane) http://www.spyware-ru.com/udalit-amisites-com-iz-brauzera-instruktsiya/
+                                                                                     http://www.spyware-ru.com/download/adwcleaner/
+																					 http://www.fixyourbrowsers.com/ru/udalit-amisites-com/
+  
+  
